@@ -1,0 +1,334 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F886 ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+[v i1_printf printf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+[v i1___lwmod __lwmod `(ui  1 e 2 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memcpy.c
+[v _memcpy memcpy `(*.4v  1 e 1 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"20 C:\Users\hsaintandre\Desktop\archivos\programacion\firmware\16f886\pic16f886.X\main.c
+[v _uart_init uart_init `(v  1 e 1 0 ]
+"34
+[v _putch putch `(v  1 e 1 0 ]
+[v i1_putch putch `(v  1 e 1 0 ]
+"40
+[v _ints_isr ints_isr `II(v  1 e 1 0 ]
+"113
+[v _main main `(v  1 e 1 0 ]
+"378 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f886.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+[s S142 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"472
+[u S150 . 1 `S142 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES150  1 e 1 @12 ]
+[s S98 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"987
+[s S107 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S111 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S114 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S117 . 1 `S98 1 . 1 0 `S107 1 . 1 0 `S111 1 . 1 0 `S114 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES117  1 e 1 @24 ]
+"1052
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1059
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S19 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1558
+[u S27 . 1 `S19 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES27  1 e 1 @140 ]
+"1702
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+[s S38 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2422
+[s S47 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S51 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S54 . 1 `S38 1 . 1 0 `S47 1 . 1 0 `S51 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES54  1 e 1 @152 ]
+"2482
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2544
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
+[s S75 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3192
+[u S84 . 1 `S75 1 . 1 0 ]
+[v _BAUDCTLbits BAUDCTLbits `VES84  1 e 1 @391 ]
+"3227
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3271
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"15 C:\Users\hsaintandre\Desktop\archivos\programacion\firmware\16f886\pic16f886.X\main.c
+[v _accuValor accuValor `ui  1 e 2 0 ]
+"16
+[v _j j `uc  1 e 1 0 ]
+"17
+[v _res res `uc  1 e 1 0 ]
+[v _outC outC `uc  1 e 1 0 ]
+[v _outD outD `uc  1 e 1 0 ]
+[v _outU outU `uc  1 e 1 0 ]
+"113
+[v _main main `(v  1 e 1 0 ]
+{
+"123
+} 0
+"20
+[v _uart_init uart_init `(v  1 e 1 0 ]
+{
+"32
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+[v printf@f f `*.24DCuc  1 a 1 wreg ]
+"528
+[v printf@val val `ui  1 a 2 21 ]
+"499
+[v printf@c c `c  1 a 1 23 ]
+"506
+[v printf@prec prec `c  1 a 1 19 ]
+"508
+[v printf@flag flag `uc  1 a 1 18 ]
+"466
+[v printf@ap ap `[1]*.4v  1 a 1 17 ]
+"464
+[v printf@f f `*.24DCuc  1 a 1 wreg ]
+"533
+[v printf@f f `*.24DCuc  1 a 1 20 ]
+"1541
+} 0
+"34 C:\Users\hsaintandre\Desktop\archivos\programacion\firmware\16f886\pic16f886.X\main.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@data data `uc  1 a 1 wreg ]
+[v putch@data data `uc  1 a 1 wreg ]
+[v putch@data data `uc  1 a 1 0 ]
+"38
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"40 C:\Users\hsaintandre\Desktop\archivos\programacion\firmware\16f886\pic16f886.X\main.c
+[v _ints_isr ints_isr `II(v  1 e 1 0 ]
+{
+"52
+[v ints_isr@data data `[18]uc  1 a 18 26 ]
+"53
+[v ints_isr@peso peso `[6]uc  1 a 6 44 ]
+"54
+[v ints_isr@valor valor `ui  1 a 2 52 ]
+"57
+[v ints_isr@garron_2c garron_2c `uc  1 a 1 58 ]
+"56
+[v ints_isr@garron_1c garron_1c `uc  1 a 1 57 ]
+"55
+[v ints_isr@i i `uc  1 a 1 56 ]
+"57
+[v ints_isr@garron_2d garron_2d `uc  1 a 1 55 ]
+"56
+[v ints_isr@garron_1d garron_1d `uc  1 a 1 54 ]
+"57
+[v ints_isr@garron_2u garron_2u `uc  1 a 1 51 ]
+"56
+[v ints_isr@garron_1u garron_1u `uc  1 a 1 50 ]
+"51
+[v ints_isr@F1837 F1837 `[18]uc  1 s 18 F1837 ]
+"52
+[v ints_isr@F1839 F1839 `[6]uc  1 s 6 F1839 ]
+"111
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v i1_printf printf `(i  1 e 2 0 ]
+{
+[v i1printf@f f `*.24DCuc  1 a 1 wreg ]
+[v i1printf@val printf `ui  1 a 2 10 ]
+[v i1printf@c printf `c  1 a 1 12 ]
+[v i1printf@prec printf `c  1 a 1 9 ]
+[v i1printf@flag printf `uc  1 a 1 8 ]
+[v i1printf@ap printf `[1]*.4v  1 a 1 7 ]
+[v i1printf@f f `*.24DCuc  1 a 1 wreg ]
+"533
+[v i1printf@f f `*.24DCuc  1 a 1 6 ]
+"1541
+} 0
+"34 C:\Users\hsaintandre\Desktop\archivos\programacion\firmware\16f886\pic16f886.X\main.c
+[v i1_putch putch `(v  1 e 1 0 ]
+{
+[v i1putch@data data `uc  1 a 1 wreg ]
+[v i1putch@data data `uc  1 a 1 wreg ]
+[v i1putch@data data `uc  1 a 1 0 ]
+"38
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v i1___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+[v i1___lwmod@counter __lwmod `uc  1 a 1 0 ]
+[v i1___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v i1___lwmod@dividend dividend `ui  1 p 2 10 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+[v i1___lwdiv@quotient __lwdiv `ui  1 a 2 5 ]
+[v i1___lwdiv@counter __lwdiv `uc  1 a 1 7 ]
+[v i1___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v i1___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"27 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memcpy.c
+[v _memcpy memcpy `(*.4v  1 e 1 0 ]
+{
+[v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
+"31
+[v memcpy@s s `*.4DCuc  1 a 1 7 ]
+"30
+[v memcpy@d d `*.4uc  1 a 1 6 ]
+"32
+[v memcpy@tmp tmp `uc  1 a 1 4 ]
+"27
+[v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
+[v memcpy@s1 s1 `*.4DCv  1 p 1 0 ]
+[v memcpy@n n `ui  1 p 2 1 ]
+"34
+[v memcpy@d1 d1 `*.4v  1 a 1 5 ]
+"41
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v atoi@a a `i  1 a 2 1 ]
+"8
+[v atoi@sign sign `uc  1 a 1 0 ]
+"5
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+[v atoi@s s `*.4DCuc  1 a 1 3 ]
+"24
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0

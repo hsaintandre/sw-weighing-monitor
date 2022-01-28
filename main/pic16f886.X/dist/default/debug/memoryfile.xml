@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\pic16f886.X.debug.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>1573</used>
+      <free>6619</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>368</length>
+      <used>133</used>
+      <free>235</free>
+    </memory>
+  </executable>
+</project>
